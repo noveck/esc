@@ -1,0 +1,186 @@
+body {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inconsolas', 'Courier Prime', monospace;
+}
+
+#terminal {
+    width: 80%;
+    max-width: 800px;
+    background-color: #0C0C0C;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+#terminal-header {
+    background-color: #323232;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.terminal-title {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.terminal-button.minimize {
+    background-color: #FFA500;
+}
+
+.terminal-button.fullscreen {
+    background-color: #008000;
+}
+
+.terminal-button.close {
+    background-color: #FF0000;
+}
+
+.terminal-button:hover {
+    filter: brightness(1.2);
+}
+
+#terminal-content {
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#progress {
+    margin-bottom: 10px;
+}
+
+#progressText, #progressBar {
+    font-size: 18px;
+}
+
+#input-area {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.prompt {
+    margin-right: 5px;
+}
+
+#passwordInput {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+
+#statusMessages {
+    height: 100px;
+    overflow-y: auto;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+#statusMessages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#statusMessages::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+#statusMessages::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 4px;
+}
+
+#endScreen {
+    text-align: center;
+}
+
+#endScreen h2.success {
+    color: #00FF00;
+}
+
+#endScreen h2.failure {
+    color: #FF0000;
+}
+
+#startButton {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#startButton:hover {
+    background-color: #2B91EA;
+}
+
+#ascii-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    color: rgba(0, 255, 0, 0.1);
+    font-size: 12px;
+    line-height: 12px;
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+@keyframes flash {
+    0%, 100% { color: white; }
+    50% { color: red; }
+}
+
+
+.timer-warning {
+    animation: flash 1s linear infinite;
+}
+
+.status-correct {
+    color: #00FF00;  /* Green */
+}
+
+.status-incorrect {
+    color: #FF0000;  /* Red */
+}
+
+.status-trap {
+    color: #FFA500;  /* Orange */
+}
+
+
+

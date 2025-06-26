@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_ESC /CITS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="ascii-background"></div>
+    <div id="terminal">
+        <div id="terminal-header">
+            <span class="terminal-title">_ESC /Cyb3rGh0st</span>
+            <div class="terminal-buttons">
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button fullscreen"></span>
+                <span class="terminal-button close"></span>
+            </div>
+        </div>
+        <div id="terminal-content">
+            <div id="instructions">
+                <h1><div class="scrambledname"></div></h1>
+                <h3>Background:</h3>
+                <p>An new hacker group, the Cyb3rGh0$t Syndicate, has infiltrated your network and planted a ransomware virus that will activate in thirty minutes. If you don't neutralize the threat in time, they will lock down your entire system and steal sensitive data, putting thousands of users and millions of dollars at risk.</p>
+                <p>Your mission is to find and eliminate the ransomware threat by solving a series of cybersecurity challenges in this room to discover clues.</p>
+                <p>Be warned, these clever hackers have planted some traps with unforseen consequences.</p>
+                <p>The fate of your company rests in your hands. Good luck, team.</p>
+                <h3>Instructions:</h3>
+                <p>Click Start to begin the countdown.</p>
+		<p>Type a clue in the provided terminal and press <b>Enter ⏎ </b> to submit. You have <b>30 minutes</b> to find <b>10 clues</b> to successfully defeat the Cyb3rGh0$t Syndicate.</p>
+                <button id="startButton">Start</button>
+            </div>
+            <div id="game" style="display: none;">
+                <div id="status">
+                    <div id="timer">30:00</div>
+                    <div id="progress">
+                        <div id="progressText">Progress: 0/10</div>
+                        <div id="progressBar">░░░░░░░░░░░░░░░░░░░░</div>
+                    </div>
+                </div>
+                <div id="input-area">
+                    <span class="prompt">>_</span>
+                    <input type="text" id="passwordInput" autocomplete="off">
+                </div>
+                <div id="statusMessages"></div>
+            </div>
+            <div id="endScreen" style="display: none;">
+                <h2 id="endScreenTitle"></h2>
+                <div id="endScreenContent"></div>
+            </div>
+        </div>
+    </div>
+    <audio id="successSound" src="success.mp3"></audio>
+    <audio id="failSound" src="fail.mp3"></audio>
+    <audio id="trapSound" src="trap.mp3"></audio>
+    <audio id="finishSound" src="finish.mp3"></audio>
+    <audio id="gameOverSound" src="gameover.mp3"></audio>
+    <script src="script.js"></script>
+    <script src="scramble.js"></script>
+</body>
+</html>
