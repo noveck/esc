@@ -1,11 +1,11 @@
-const passwords = ['B@nner24!', '6', 'B1gBlu3Dog$20', '73USQN4YQ4Y6CA', 'Sh4r3d', 'Lim3wir3', 'Confidentiality', 'ISEEYOU', 'C1TS', '1Z093A4A0379647014'];
+const passwords = ['hint1', 'hint2', 'hint3', 'hint4', 'hint5', 'hint6', 'hint7', 'hint8', 'hint9', 'hint10'];
 const traps = {
-    'Zer0Trust': 'Virus detected in USB! System lockdown initiated.',
-    'Fr33_net': 'Suspicious WIFI Detected! Network lockout engaged.',
-    'password123': 'Weak password detected! Account temporarily suspended.',
-    'http://h3lp.me': 'Malicious website! Browser lockdown initiated.',
-    '6195638': 'Suspicous contact found! Calls blocked.',
-    'Ch34tc0de!': 'Malicious data found! Firewall activated.'
+    'trap1': 'Virus detected in USB! System lockdown initiated.',
+    'trap2': 'Suspicious WIFI Detected! Network lockout engaged.',
+    'trap3': 'Weak password detected! Account temporarily suspended.',
+    'trap4': 'Malicious website! Browser lockdown initiated.',
+    'trap5': 'Suspicous contact found! Calls blocked.',
+    'trap6': 'Malicious data found! Firewall activated.'
 };
 let startTime;
 let trapCount = 0;
